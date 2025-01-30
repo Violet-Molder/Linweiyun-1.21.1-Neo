@@ -1,0 +1,7 @@
+{
+  "enchantment.linweiyun.fps_killer": "FPS杀手",
+  "config.linweiyun.invert_enchantment_usage": "是否反向使用附魔属性",
+  "config.linweiyun.max_fps_killer_damage": "最高追加伤害",
+  "config.linweiyun.damage_per_frame": "每帧对伤害的影响值",
+  "config.linweiyun.start_frame": "开始计算的帧数"
+}
