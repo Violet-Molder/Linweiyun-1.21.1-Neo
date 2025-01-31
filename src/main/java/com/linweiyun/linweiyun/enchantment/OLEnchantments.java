@@ -19,6 +19,8 @@ public class OLEnchantments {
             ResourceLocation.fromNamespaceAndPath(Linweiyun.MOD_ID, "fps_killer"));
     public static final ResourceKey<Enchantment> KINDNESS = ResourceKey.create(Registries.ENCHANTMENT,
             ResourceLocation.fromNamespaceAndPath(Linweiyun.MOD_ID, "kindness"));
+    public static final ResourceKey<Enchantment> NEWTON_THIRD_LAW = ResourceKey.create(Registries.ENCHANTMENT,
+            ResourceLocation.fromNamespaceAndPath(Linweiyun.MOD_ID, "newton_third_law"));
     public static void bootstrap(BootstrapContext<Enchantment> context) {
         var enchantments = context.lookup(Registries.ENCHANTMENT);
         var items = context.lookup(Registries.ITEM);
@@ -44,7 +46,16 @@ public class OLEnchantments {
             Enchantment.dynamicCost(5, 5),
             2,
             EquipmentSlotGroup.MAINHAND))
-                .exclusiveWith(enchantments.getOrThrow(EnchantmentTags.DAMAGE_EXCLUSIVE))
+        );
+        register(context, NEWTON_THIRD_LAW, Enchantment.enchantment(Enchantment.definition(
+            items.getOrThrow(ItemTags.WEAPON_ENCHANTABLE),
+            items.getOrThrow(ItemTags.SWORD_ENCHANTABLE),
+            3,
+            5,
+            Enchantment.dynamicCost(1, 5),
+            Enchantment.dynamicCost(5, 5),
+            2,
+            EquipmentSlotGroup.MAINHAND))
         );
     }
 

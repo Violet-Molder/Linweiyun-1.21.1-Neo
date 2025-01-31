@@ -104,7 +104,6 @@ public class OLFpsKillerC2SPacket implements CustomPacketPayload {
                             damage = weaponDamage + enchantmentLevel + Config.damagePerFrame * (fps - Config.startFrame);
                         }
                     }
-                    player.sendSystemMessage(Component.literal("fps:" + damage));
                     if (damage > 0) {
                         livingEntity.hurt(player.damageSources().playerAttack(player), damage);
                     } else {

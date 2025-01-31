@@ -1,6 +1,7 @@
 {
   "enchantment.linweiyun.fps_killer": "FPS杀手",
   "enchantment.linweiyun.kindness": "仁慈",
+  "enchantment.linweiyun.newton_third_law": "牛顿第三定律",
   "config.linweiyun.invert_enchantment_usage": "是否反向使用附魔属性",
   "config.linweiyun.max_fps_killer_damage": "最高追加伤害",
   "config.linweiyun.damage_per_frame": "每帧对伤害的影响值",
