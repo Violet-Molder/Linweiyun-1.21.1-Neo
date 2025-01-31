@@ -131,8 +131,7 @@ public class onPlayerAttackEntityEvent {
 //                                        target.setItemSlot(selectedSlot, ItemStack.EMPTY);
 
                                     } else {
-                                        int whetherDrop = random.nextInt(100 + 1);
-                                        giveOriDropItem(disarmedItemStack.copy(), targetPlayer, target.level(), itemEnchantmentLevel, whetherDrop);
+                                        giveOriDropItem(disarmedItemStack.copy(), targetPlayer, target.level());
                                         targetPlayer.setItemSlot(selectedSlot, ItemStack.EMPTY);
                                     }
 
@@ -148,7 +147,7 @@ public class onPlayerAttackEntityEvent {
         }
     }
 
-    static void giveOriDropItem(ItemStack stack, Player player, Level level, int enchantmentLevel, int random){
+    static void giveOriDropItem(ItemStack stack, Player player, Level level){
         boolean canDrop = true;
         boolean canGive = true;
         for (int i = 0; i < player.getInventory().getContainerSize()-5; i++){
@@ -173,11 +172,10 @@ public class onPlayerAttackEntityEvent {
             }
         }
         if (canDrop){
-            if (random <= 10 + enchantmentLevel) {
-                ItemEntity entity = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), stack);
-                entity.setPickUpDelay(40);
-                level.addFreshEntity(entity);
-            }
+            ItemEntity entity = new ItemEntity(level, player.getX(), player.getY(), player.getZ(), stack);
+            entity.setPickUpDelay(40);
+            level.addFreshEntity(entity);
+
         }
     }
 
