@@ -18,9 +18,10 @@ public class OLPackets {
                 OLFpsKillerC2SPacket.TYPE,
                 OLFpsKillerC2SPacket.STREAM_CODEC,
                 new DirectionalPayloadHandler<>(
-                        null,
-                        OLFpsKillerC2SPacket::handle
+                        null,//客户端接收到包后调用的方法
+                        OLFpsKillerC2SPacket::handle//服务端接收到包后调用的方法
                 )
         );
+
     }
 }
