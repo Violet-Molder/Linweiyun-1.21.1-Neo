@@ -1,0 +1,41 @@
+{
+  "vertex": "examplemod:sphere",
+
+  "fragment": "examplemod:sphere",
+
+  "samplers": [
+  ],
+
+  "uniforms": [
+    {
+      "name": "ModelViewMat1",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1.0, 0.0, 0.0, 0.0,
+        0.0, 1.0, 0.0, 0.0,
+        0.0, 0.0, 1.0, 0.0,
+        0.0, 0.0, 0.0, 1.0
+      ]
+    },
+
+
+    {
+      "name": "ProjMat1",
+      "type": "matrix4x4",
+      "count": 16,
+      "values": [
+        1.0, 0.0, 0.0, 0.0,
+        0.0, 1.0, 0.0, 0.0,
+        0.0, 0.0, 1.0, 0.0,
+        0.0, 0.0, 0.0, 1.0
+      ]
+    },
+    {
+      "name": "GameTime1",
+      "type": "float",
+      "count": 1,
+      "values": [ 100000.0 ]
+    }
+  ]
+}
