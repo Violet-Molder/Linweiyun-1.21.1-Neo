@@ -4,6 +4,13 @@
   "enchantment.linweiyun.newton_third_law": "Newton's Third Law",
   "enchantment.linweiyun.confusion": "Confusion",
 
+
+  "linweiyun.configuration.title": "Linweiyun Configuration",
+  "linweiyun.configuration.section.linweiyun.common.toml.title": "General Settings",
+  "linweiyun.configuration.section.linweiyun.common.toml": "General configuration options for Linweiyun",
+  "linweiyun.configuration.fps_killer": "Fps Killer Configs",
+  "linweiyun.configuration.fps_killer.button": "Fps Killer Configs",
+  "linweiyun.configuration.fps_killer.tooltip": "LinweiyunMod's FpsKiller Enchant Config",
   "config.linweiyun.invert_enchantment_usage": "Invert Enchantment Usage",
   "config.linweiyun.max_fps_killer_damage": "Max FPS Killer Damage",
   "config.linweiyun.damage_per_frame": "Damage Per Frame",
@@ -12,9 +19,8 @@
   "config.linweiyun.max_fps_killer_damage.tooltip": "Maximum damage dealt by FPS killer",
   "config.linweiyun.damage_per_frame.tooltip": "Amount of damage applied per frame",
   "config.linweiyun.start_frame.tooltip": "Frame count at which damage starts",
-  "linweiyun.configuration.title": "Linweiyun Configuration",
-  "linweiyun.configuration.section.linweiyun.common.toml.title": "General Settings",
-  "linweiyun.configuration.section.linweiyun.common.toml": "General configuration options for Linweiyun",
+
+
 
 
   "message.linweiyun.safe_location_found": "Safe Location Found"
