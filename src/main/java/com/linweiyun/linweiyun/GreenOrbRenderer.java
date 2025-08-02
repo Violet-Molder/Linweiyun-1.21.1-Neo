@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package com.linweiyun.linweiyun;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.*;
@@ -13,8 +13,6 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RenderLevelStageEvent;
-import org.joml.Matrix4f;
-import org.joml.Matrix4fStack;
 import org.lwjgl.opengl.GL11;
 
 @EventBusSubscriber(value = Dist.CLIENT)
@@ -26,9 +24,9 @@ public class GreenOrbRenderer {
     // 光球显示时间
     private static long renderStartTime = 0;
     // 光球显示持续时间（毫秒）
-    private static final long RENDER_DURATION = 50000; // 5秒
+    private static final long RENDER_DURATION = 250; // 5秒
 
-    private static final ResourceLocation ORB_TEXTURE = ResourceLocation.fromNamespaceAndPath("examplemod", "textures/entity/green_orb.png");
+    private static final ResourceLocation ORB_TEXTURE = ResourceLocation.fromNamespaceAndPath(Linweiyun.MOD_ID, "textures/entity/green_orb.png");
     /**
      * 显示光球在玩家面前
      * @param player 当前玩家

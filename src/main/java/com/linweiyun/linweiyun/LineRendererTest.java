@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package com.linweiyun.linweiyun;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.*;
@@ -33,7 +33,7 @@ public class LineRendererTest {
 
     // 矩形体显示持续时间（毫秒）
     // 定义闪电渲染的总持续时间，7000毫秒=7秒
-    private static final long RENDER_DURATION = 7000; // 5秒
+    private static final long RENDER_DURATION = 250; // 5秒
 
     // 矩形体的朝向
     // 存储矩形体的欧拉角旋转信息（yaw偏航角和pitch俯仰角）

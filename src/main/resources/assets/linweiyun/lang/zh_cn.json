@@ -1,0 +1,19 @@
+{
+  "config.linweiyun.invert_enchantment_usage": "反转附魔效果",
+  "config.linweiyun.max_fps_killer_damage": "帧数杀手最大伤害",
+  "config.linweiyun.damage_per_frame": "每帧伤害",
+  "config.linweiyun.start_frame": "起始帧数",
+  "config.linweiyun.invert_enchantment_usage.tooltip": "是否反转附魔使用效果",
+  "config.linweiyun.max_fps_killer_damage.tooltip": "帧数杀手造成的最大伤害值",
+  "config.linweiyun.damage_per_frame.tooltip": "每帧造成的伤害量",
+  "config.linweiyun.start_frame.tooltip": "开始造成伤害的帧数",
+  "linweiyun.configuration.title": "林维云模组配置",
+  "linweiyun.configuration.section.linweiyun.common.toml.title": "通用设置",
+  "linweiyun.configuration.section.linweiyun.common.toml": "林维云模组的通用配置选项",
+
+  "enchantment.linweiyun.confusion": "混乱",
+  "enchantment.linweiyun.fps_killer": "FPS杀手",
+  "enchantment.linweiyun.kindness": "仁慈",
+  "enchantment.linweiyun.newton_third_law": "牛顿第三定律",
+  "message.linweiyun.safe_location_found": "跃迁即将开始！目标：（%s, %s, %s），将在三秒后抵达目标位置，请做好准备！"
+}
